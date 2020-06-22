@@ -1,0 +1,484 @@
+/*!
+ * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+  
+html {
+    max-width: 100%;
+}
+
+.widthContainer {
+    width: 70%;
+}
+
+body {
+    overflow-x: hidden;
+    /* necessary to avoid vertical scrollbar with when background gear animation moves */
+    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    padding-top: 54px;
+    color: #868e96;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(250, 250, 251, 0) 0%, rgba(252, 185, 70, 0.335) 400%);
+    background-attachment: fixed;
+    background-repeat: none;
+    height: 100%;
+}
+
+.cogs {
+    font-size: 2rem;
+    margin: 0.5rem;
+    display: none;
+    animation: spin 12s linear infinite;
+}
+
+.flag {
+    height: 20px;
+    padding-right: 3px;
+}
+
+#mobile-profile {
+    width: 150px;
+    border: 6px solid #56514e;
+}
+
+
+
+
+p,
+.resume-date {
+    font-size: 1.4rem;
+}
+
+p.lead {
+    font-size: 1.4rem;
+    font-weight: 400
+}
+
+.js-scroll-trigger {
+    font-size: 1.3rem;
+}
+
+.js-scroll-trigger:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+    color: #bd5d38 !important;
+}
+
+a.nav-link:focus {
+    color: #bd5d38 !important;
+}
+
+.nav-link.active {
+    color: #bd5d38 !important;
+}
+
+@media only screen and (min-width:992px) {
+    body {
+        padding-top: 0;
+        padding-left: 17rem
+    }
+
+    .cogs {
+        display: block;
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem
+}
+
+h2 {
+    font-size: 3.5rem
+}
+
+/* h3 {
+    font-size: 2rem
+} */
+
+
+.btn-default {
+    color: #bd5d38;
+    width: 30px;
+    padding-left: 0px;
+}
+
+
+.subheading {
+    color: rgb(90, 86, 86);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 2rem
+}
+
+li {
+    font-size: 1.35rem;
+}
+
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 800;
+    letter-spacing: .05rem;
+    text-transform: uppercase
+}
+
+#sideNav .navbar-toggler:focus {
+    outline-color: #d48a6e
+}
+
+@media only screen and (min-width:992px) {
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh
+    }
+
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: .5rem
+    }
+
+    #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: .5rem solid rgba(255, 255, 255, .2)
+    }
+
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto
+    }
+
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block
+    }
+}
+
+section.resume-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    max-width: 75rem
+}
+
+.section.resume-section .resume-item .resume-date {
+    min-width: none
+}
+
+
+/* mid/large screen media queries */
+@media only screen and (min-width:768px) {
+    section.resume-section {
+        min-height: 100vh
+    }
+
+    section.resume-section .resume-item .resume-date {
+        min-width: 18rem
+    }
+}
+
+
+
+@media only screen and (min-width:992px) {
+    section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important
+    }
+
+
+}
+
+
+/* mobile friendly */
+@media only screen and (max-width:600px) {
+
+    .wrapped-img{
+     display: block;
+     width: 100%;
+    }
+
+    body {
+        padding-left: 2px;
+    }
+
+    #about {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p,
+    .lead,
+    li {
+        font-size: 1rem !important;
+    }
+
+    .subheading {
+        font-size: 1.5rem !important;
+    }
+
+    .resume-date {
+        font-size: 1rem;
+    }
+
+    .tz-gallery .lightbox:before {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+    .widthContainer {
+        width: 100%;
+    }
+
+}
+
+
+.bg-primary {
+    background-color: #a8a6a5 !important
+}
+
+.text-primary {
+    color: #bd5d38 !important;
+}
+
+a {
+    color: #bd5d38
+}
+
+a:active,
+a:focus,
+a:hover {
+    color: #824027
+}
+
+.resume-section .subheading {
+    font-size: 1.5rem;
+}
+
+.resume-section p {
+    font-size: 1.2rem;
+}
+
+#projects li {
+    font-size: 1.2rem;
+}
+
+/* project expandarrows */
+.expandDetails{
+    text-decoration: none!important;
+}
+
+.show{
+    display: inline-block;
+}
+.hidden{
+    display: none;
+}
+
+ .info-long {
+    display: none;
+    background-color: rgba(163, 120, 79, 0.075);
+    padding: 1rem 2rem;
+    margin: 1rem 0 1rem 0;
+  }
+/* project expandarrows */
+
+
+/* GALLERY*/
+
+.tz-gallery {
+    padding: 10px 0px 20px 0px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row>div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+    position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+    .tz-gallery .lightbox:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -13px;
+        margin-left: -13px;
+        opacity: 0;
+        color: #fff;
+        font-size: 26px;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f002';
+        pointer-events: none;
+        z-index: 9000;
+        transition: 0.4s;
+    }
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(182, 108, 39, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+/* overlay text*/
+.overlay span {
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 0.8rem;
+}
+
+.lightbox .overlay {
+    z-index: 54;
+    /* to make it above overlay color from gallery */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.lightbox:hover .overlay {
+    opacity: 1;
+}
+
+/* gears */
+.gear-container {
+    position: relative;
+}
+
+
+.gear-bg {
+    background-color:transparent; 
+    overflow: hidden;
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    top: 0;
+    right: 0;
+    z-index: -187;
+}
+
+#gear1, #gear2, #gear3, #gear4, #gear5, #gear6, #gear7{
+    float:right;
+    position: absolute;
+    display: block;
+}
+
+#gear1{ 
+    color: rgba(136, 136, 136, 0.164);
+    font-size: 400px;
+    top: -200px;
+   right: -90px;
+}
+
+#gear2{ 
+    color: rgba(231, 151, 86, 0.137);
+    right: 160px;
+    font-size: 220px;
+    top: 150px;
+}
+
+#gear3{ 
+    color: rgba(136, 136, 136, 0.13);
+right: 300px;
+    font-size: 220px;
+  top: -40px;
+}
+
+#gear4{ 
+    color: rgba(231, 151, 86, 0.082);
+    font-size: 100px;
+ right: 110px;
+ top: 340px;
+}
+
+#gear5{
+    color: rgba(172, 147, 124, 0.13);
+    right: 0px;
+    font-size: 150px;
+  top: 215px;
+}
+
+#gear6{ 
+    color: rgba(104, 91, 80, 0.109);
+    font-size: 80px;
+ right: 380px;
+ top: 190px;
+}
+
+#gear7{ 
+    color: rgba(231, 159, 96, 0.109);
+    font-size: 80px;
+ right: 520px;
+ top: 10px;
+}
+/* gears */
